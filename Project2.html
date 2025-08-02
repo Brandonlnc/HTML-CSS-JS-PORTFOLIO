@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Project2style.css" />
+    <link rel="stylesheet" href="Project1mediaquerries.css" />
+    <meta name="view-transition" content="same-origin" />
+  </head>
+
+  <body>   
+    <section id="Project">
+      <div class="project1">
+        <h1 class="title-project1">RC Two-Speed Vehicle</h1>
+        <h2>UBC MECH 223</h2>
+      </div>
+    </section>
+    <section id="Explanation1">
+      <div class="explanation__pic-container">
+        <img
+           src="./assets/MECH2 Steering.png"
+           alt="Explanation Picture"
+           class="explanation-pic"
+        />
+      </div>
+      <div class="explanation-text">
+        <p>As part of the MECH 223 project modules, my team and I had to design and manufacture a remote-controlled vehicle. The RC vehicle should be operated by a 6V motor, that should be powered on at maximum power at all times. The vehicle should also be able to drive through obstacles such as hills, gaps, bumps, sand pits, and elevated banks along a narrow track.<br>
+          <br> As such, we developed a 2 gear + neutral gearbox drivetrain, with integrated brake pads braking mechanism, operated by servo motors and a radio transmitter. The steering mechanism was developed as a rack-and-pinion steering and the parts were 3D-printed from PLA and PETG. The chassis was manufactured out of a 2x4 pine wood that was carved out using CAM software and wood tooling CNC. Other attachments and housing shells were waterjet cut from aluminum sheets and machined to the desired shape and within tolerances.</p>
+      </div>
+    </section>
+    <section id="Explanation2">
+      <div class="explanation-text">
+        <p> Using MATLAB and Excel, calculations pertaining to the acceleration and braking physics of the vehicle were made. An optimal design was then produced as per the design rules and requirements, space and material constraints, and target specifications set to achieve the most points during competition. <br>
+          <br> One major constraint for the vehicle was the motor controller and braking mechanism, since the drivetrain motor would be operating at a constant maximum power. For this reason, I developed a 2 speed gearbox with 20:1 and 10:1 gear ratio, and neutral operation through gear unmeshing via a servo motor. The braking mechanism was developed by gear friction with a circular pad via the same servo motor.  Overall, the vehicle achieved 3rd place in the competition and was the fastest and most manoeverable.
+      </div>
+      <div class="explanation__pic-container">
+        <img
+           src="./assets/MECH2 Drivetrain.png"
+           alt="Explanation Picture"
+           class="explanation-pic"
+        />
+      </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email Icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:brandonlnc31@gmail.com">brandonlnc31@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn Icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/brandonlamnganchan/">LinkedIn</a></p>
+        </div>
+    </section>
+    <div id="footer">
+        <p>Copyright &#169; 2025 Brandon Lam Ngan Chan. All Rights Reserved</p>
+    </div>
+    <script src="Project1script.js"></script>
+  </body>
+</html>

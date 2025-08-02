@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Project3style.css" />
+    <link rel="stylesheet" href="Project1mediaquerries.css" />
+    <meta name="view-transition" content="same-origin" />
+  </head>
+
+  <body>   
+    <section id="Project">
+      <div class="project1">
+        <h1 class="title-project1">Project Tracking System</h1>
+        <h2>FortisBC</h2>
+      </div>
+    </section>
+    <section id="Explanation1">
+      <div class="explanation__pic-container">
+        <img
+           src="./assets/Pipeline Construction.jpeg"
+           alt="Explanation Picture"
+           class="explanation-pic"
+        />
+      </div>
+      <div class="explanation-text">
+        <p>During my internship as a pipeline mechanical engineering co-op, I worked on various projects ranging from pipeline crossing assessments, pipe and valve replacements, railway and bridge pipe crossings, as well as the installation of pipelines and other utilities. One major problem the department was facing was the inefficient and time-consuming process of  finding information and pipeline specifications from prior projects that had been re-opened, or new projects in very close locations to those previous completed projects.<br>
+          <br> As such, I proposed and developed a project tracking system to locate the exact location of projects that were both 'completed' or 'in progress'. Through a Geographic Information System (GIS), I mapped all the current assets owned by the company to the nearest +/- 1m, including their technical information, pipe specification (including OD, thickness, MOP rating, COP rating, date of installation, material, coating, etc...), and latest system integrity report. </p>
+      </div>
+    </section>
+    <section id="Explanation2">
+      <div class="explanation-text">
+        <p> From then on, I developed and VBA coded a spreadsheet with automatically-updating pivot tables containing all critical information about a specific project. These include project name, budget, pipe specification, project engineer, project manager, date of completion, etc... Each of these projects were then mapped onto the GIS as pins by their latitude and longitude coordinates, and were categorized by the project engineer who sealed the project documents.<br>
+          <br> By query search, all the latest critical information would be updated and easily accessible by location on the GIS. A simple click on the desired pin allows the user to access all information regarding this project, as well as previous projects stemming from the same pipeline segment. It also allows the user to access a link to the sealed project reports, and the additional supporting documentation such as SMYS stress calculations.</p>
+      </div>
+      <div class="explanation__pic-container">
+        <img
+           src="./assets/Tracking.avif"
+           alt="Explanation Picture"
+           class="explanation-pic"
+        />
+      </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email Icon" 
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:brandonlnc31@gmail.com">brandonlnc31@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn Icon" 
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/brandonlamnganchan/">LinkedIn</a></p>
+        </div>
+    </section>
+    <div id="footer">
+        <p>Copyright &#169; 2025 Brandon Lam Ngan Chan. All Rights Reserved</p>
+    </div>
+    <script src="Project1script.js"></script>
+  </body>
+</html>

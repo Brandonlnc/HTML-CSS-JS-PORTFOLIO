@@ -1,0 +1,241 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    /*height: 100vh;*/
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* CONTACT */
+
+  #contact-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+    margin: 2rem auto;
+    padding: 0.5rem; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    gap: 2rem;
+  }
+
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+    margin: 1rem;
+  }
+
+  .contact-info-container p {
+    font-size: larger;
+  }
+
+  .section__text__p1 {
+    color: rgb(200,50,50);
+    font-weight: bolder;
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .contact-icon {
+    cursor: default;
+    margin: 0.5rem;
+  }
+
+  .email-icon {
+    height: 2.5rem;
+    margin: 0.5rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  a:hover {
+    color: rgb(200,50,50);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb (181, 181, 181);
+    font-weight: bold;
+    font-size: larger;
+}
+
+  /* FOOTER SECTIION */
+
+  #footer {
+    height: 26vh;
+    margin: 0 1rem;
+    text-align: center;
+    padding: 40px 20px 20px; /* Top padding increased for spacing */
+  }
+
+  .footer-nav {
+    margin-bottom: 30px; /* Creates space between nav and copyright */
+  }
+
+  .title {
+    text-align:center;
+  }
+
+ .section__text__p1 {
+    text-align: center;
+}
+
+/* PROJECT */
+
+#Project {
+  /*   1. Cropped box with a custom aspect-ratio
+       Change 16 / 6 → 16 / 7, 21 / 9, etc. until the height looks right.   */
+  aspect-ratio: 16 / 6;        /* width / height  ➜   lower second number → shorter */
+  width: 100%;
+  position: relative;
+  overflow: hidden;            /* hides the parts we’re “cropping” */
+  margin: 0;
+  color: white;
+}
+
+/* 2-layer background:   ::before = image   |   ::after = dark overlay */
+#Project::before,
+#Project::after {
+  content: "";
+  position: absolute;
+  inset: 0;                    /* shorthand for top/right/bottom/left: 0 */
+  z-index: -2;                 /* sit behind the content */
+}
+
+/* 2a. Image layer */
+#Project::before {
+  background: url(/assets/MECH2\ Car\ CAD.png) center / cover no-repeat;
+  /* ‘cover’ fills the box without ever shrinking the image’s intrinsic size */
+}
+
+/* 2b. Optional dimming overlay (adjust rgba alpha as needed) */
+#Project::after {
+  background: rgba(0, 0, 0, 0.50);
+  z-index: -1;                 /* above the photo, below the text */
+}
+
+/* ———  CONTENT INSIDE THE HERO  ———————————————————————————————— */
+
+.project1 {
+    /* stretch across the hero and keep text centred */
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column; /* stack children vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.title-project1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);   /* responsive font size */
+  text-align: center;
+  margin: 0;
+}
+
+h1, h2 {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    color: rgb(200,50,50);
+}
+
+/* ———  Fallback for browsers that don’t support aspect-ratio  ———— */
+@supports not (aspect-ratio: 1 / 1) {
+  #Project {
+    height: 0;
+    padding-top: 37.5%;  /* 37.5% ≈ 16 / 6  ➜ adjust to match your ratio */
+  }
+}
+
+/* EXPLANATION */
+
+#Explanation1, #Explanation2, #Explanation3 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    height: min-content;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+.explanation-text {
+    text-align: justify;
+}
+
+.explanation__pic-container {
+    display: flex;
+    height: 450px;
+}
+
+.explanation-text {
+    display: flex;
+    font-size: larger;
+}
+
+.explanation__pic-container3 {
+    display: flex;
+    height: 600px;
+}
+
+
+
+  
+
+  
